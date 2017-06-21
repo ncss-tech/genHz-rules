@@ -11,3 +11,19 @@ Some options:
   * files associated with the [`soilReports` package](https://github.com/ncss-tech/soilReports)
   * ???
   
+
+## JSON
+
+### Encode
+```r
+library(jsonlite)
+toJSON(gen.hz.rules, pretty = TRUE)
+```
+
+### Decode
+```r
+library(jsonlite)
+x <- 
+ghl <- fromJSON(x)
+```
+
