@@ -17,13 +17,16 @@ Some options:
 ### Encode
 ```r
 library(jsonlite)
+# get an example, results in a list called "gen.hz.rules"
+source('https://raw.githubusercontent.com/ncss-tech/genHz-rules/master/named-list-example.R')
+# convert to JSON for editing, ...?
 toJSON(gen.hz.rules, pretty = TRUE)
 ```
 
 ### Decode
 ```r
 library(jsonlite)
-x <- 
-ghl <- fromJSON(x)
+# convert JSON representation to named list
+ghl <- fromJSON('https://raw.githubusercontent.com/ncss-tech/genHz-rules/master/example.json')
 ```
 
